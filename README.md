@@ -45,7 +45,7 @@ Provide a bulleted list with four major points from the two analysis deliverable
 
 - We started by creating a table of those of retirement age and their titles.  To do so, we linked the employees csv file with the titles csv file in a left join respectively using the employee numbers.  We grabbed the employee number, first name and last name from the employees csv and the title, from date and to date from the titles csv.  This table was saved as [retirement_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv) with 133,776 results.  The results contained duplicate employees due to job changes as well as employees no longer with Pewlett-Hackard.
 
-- To remove duplicates, we used DISTINCT ON with the employee number.  We then removed ex-employees by adding in a WHERE clause that had the "9999-01-01" default to_date for active employees.  This reduced us to 72458 records, removing over 90,000 rows of data for duplicates and ex-employees.  Revised data was saved to [unique_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv).
+- To remove duplicates, we used DISTINCT ON with the employee number.  We then removed ex-employees by adding in a WHERE clause that had the "9999-01-01" default to_date for active employees.  This reduced us to 72,458 records, removing over 90,000 rows of data for duplicates and ex-employees.  Revised data was saved to [unique_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv).
 
 - To summarize the data by titles, we selected counts into new file [retiring_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.csv). 
 
@@ -57,9 +57,11 @@ Provide a bulleted list with four major points from the two analysis deliverable
 
 ## Summary
 
-Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
+### How many roles will need to be filled as the "silver tsunami" begins to make an impact? 
 
-How many roles will need to be filled as the "silver tsunami" begins to make an impact? Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+The list of possible mentors was limited to just birth year and active status.  But that doesn't mean those individuals are qualified.  Someone who has just recently started a position would not be qualified to mentor as they're still learning themselves.  It should also not be limited to age other than not being too close to retirement age themselves as they wouldn't be available to mentor for long.   To make the mentor list more robust, we changed the 1965 birth year to any birthdate after 1965-01-01.  We also filtered that the employee has been in their current position for more than two years with a from date older than 2000-08-01.  It was here we discovered we only have employees born before 1965-02-01 and that we don't have a full list of employees from our original sources.  If we go based on what we have, we narrowed down to only 145 qualified mentors to help train 72,458 possible incoming employees.  Data was saved in [mentorship_revised.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_revised.csv).  145 is definitely not enough mentors.  We need more complete raw data to revise our expectations.  
 
 ## Challenge Files
 - [SQL Query File](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql)
