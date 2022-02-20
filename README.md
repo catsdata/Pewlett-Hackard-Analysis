@@ -61,16 +61,17 @@ Provide a bulleted list with four major points from the two analysis deliverable
 
 ### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
-   The list of possible mentors was limited to just birth year and active status.  But that doesn't mean those individuals are qualified.  Someone who has just recently started a position would not be qualified to mentor as they're still learning themselves.  It should also not be limited to age other than not being too close to retirement age themselves as they wouldn't be available to mentor for long.   To make the mentor list more robust, we changed the 1965 birth year to any birthdate after 1965-01-01.  We also filtered that the employee has been in their current position for more than two years with a from date older than 2000-08-01.  It was here we discovered we only have employees born before 1965-02-01 and that we don't have a full list of employees from our original sources.  If we go based on what we have, we narrowed down to only 145 qualified mentors to help train 72,458 possible incoming employees.  Data was saved in [mentorship_revised.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_revised.csv).  145 is definitely not enough mentors; and does not cover all positions.  We need more complete raw data to revise our expectations.  
+   The original list of possible mentors was limited to just birth year and active status.  But that doesn't mean those individuals are qualified.  Someone who has just recently started a position would not be qualified to mentor as they're still learning themselves.  It should also not be limited to age other than not being too close to retirement age themselves as they wouldn't be available to mentor for long.   To make the mentor list more robust, we changed the 1965 birth year to any birthdate after 1965-01-01.  We also filtered that the employee has been in their current position for more than two years with a from date older than 2000-08-01.  It was here we discovered we only have employees born before 1965-02-01 and that we don't have a full list of employees from our original sources.  If we go based on what we have, we narrowed down to only 1352 qualified mentors to help train the 72,458 possible incoming employees.  Data was saved in [mentorship_revised.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_revised.csv).  For all but the Manager positions, each mentor would have on average 50 incoming employees a piece.  That's a heavy menotring workload.  We need more complete raw data on current employees to revise our expectations and accurately define our mentors.
 
    ![mentor_title_counts.PNG](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/mentor_title_counts.PNG)
 
-## Challenge Files
+## Challenge Data Files
 - [SQL Query File](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql)
 - [mentorship_eligibility.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_eligibility.csv)
 - [retirement_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv)
 - [retiring_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.csv)
 - [unique_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv)
+- [mentorship_revised.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_revised.csv)
 
 
 
