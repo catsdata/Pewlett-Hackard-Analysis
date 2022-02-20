@@ -61,7 +61,7 @@ Provide a bulleted list with four major points from the two analysis deliverable
 
 ### How many roles will need to be filled as the "silver tsunami" begins to make an impact? 
 
-   As seen above, we have 72,458 employees coming up on retirement.  This certainly does earn the "silver tsunami" name.  However, thankfully, they're not all retiring at once.  We can break it down a little further to find our first year's impact of those born in 1952.  (Recall that our original list contained birth years of 1952 through 1955).  
+   As seen above, we have 72,458 employees coming up on retirement in the next 4 years.  This certainly does earn the "silver tsunami" name.  However, thankfully, they're not all retiring at once.  We can break it down a little further to find our first year's impact of those born in 1952.  (Recall that our original list contained birth years of 1952 through 1955).  By using our unique_titles.csv file and joining with the employees.csv for birth year, we filtered down to solely 1952.  16,981 of our upcoming retirees will depart in the first expected year.  This is almost a quarter of our full count.  That's still pretty substantial, but thankfully expected based on 4 years of retirees. When taking into consideration our original mentor counts, it's about 10-14 new employees per year for the mentors.  That can be feasible as long as it's simply mentoring and not fully training. 
    
    ![firstyear_summary](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/firstyear_summary.PNG)
 
