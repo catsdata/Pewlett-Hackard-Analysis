@@ -20,15 +20,7 @@ Pewllet-Hackard is a company with several thousand loyal employees; many of whic
 
 Data is currently pulled into csv files from seperate systems, but needs to be built into a database for future use and scalability.  SQL is the preferred database structure.
 
-We have been provided six CSV files (listed below in resources) to convert into the SQL database for the retirement analysis:
-- departments.csv
-- dept_emp.csv
-- dept_manager.csv
-- employees.csv
-- salaries.csv
-- titles.csv
-
-Based on the csv files, we created an entity relationship diagram (ERD) to plan out our data relationships and start our SQL query.
+We have been provided six CSV files (listed below in resources) to convert into the SQL database for the retirement analysis.  Based on the csv files, we created an entity relationship diagram (ERD) to plan out our data relationships and start our SQL query.
 
 ![EmployeeDB.png](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png)
 
@@ -44,7 +36,6 @@ Based on the csv files, we created an entity relationship diagram (ERD) to plan 
 - Software: 
     - PostgreSQL 12.9.1
     - pgAdmin 4
-
 
 ## Results
 
