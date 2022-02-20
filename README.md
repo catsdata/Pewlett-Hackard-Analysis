@@ -43,7 +43,7 @@ Provide a bulleted list with four major points from the two analysis deliverable
 
 ### Number of Retiring Employees by Title:
 
-- We started by creating a table of those of retirement age and their titles.  To do so, we linked the employees csv file with the titles csv file in a left join respectively using the employee numbers.  We grabbed the employee number, first name and last name from the employees csv and the title, from date and to date from the titles csv.  This table was saved as [retirement_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv) with 133,776 results.  The results contained duplicate employees due to job changes as well as employees no longer with Pewlett-Hackard.
+- We started by creating a table of those of retirement age (born 1952 through 1955) and their titles.  To do so, we linked the employees csv file with the titles csv file in a left join respectively using the employee numbers.  We grabbed the employee number, first name and last name from the employees csv and the title, from date and to date from the titles csv.  This table was saved as [retirement_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv) with 133,776 results.  The results contained duplicate employees due to job changes as well as employees no longer with Pewlett-Hackard.
 
 - To remove duplicates, we used DISTINCT ON with the employee number.  We then removed ex-employees by adding in a WHERE clause that had the "9999-01-01" default to_date for active employees.  This reduced us to 72,458 records, removing over 90,000 rows of data for duplicates and ex-employees.  Revised data was saved to [unique_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv).
 
@@ -60,6 +60,10 @@ Provide a bulleted list with four major points from the two analysis deliverable
 ## Summary
 
 ### How many roles will need to be filled as the "silver tsunami" begins to make an impact? 
+
+   As seen above, we have 72,458 employees coming up on retirement.  This certainly does earn the "silver tsunami" name.  However, thankfully, they're not all retiring at once.  We can break it down a little further to find our first year's impact of those born in 1952.  (Recall that our original list contained birth years of 1952 through 1955).  
+   
+   ![firstyear_summary](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/firstyear_summary.PNG)
 
 ### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
