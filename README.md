@@ -41,13 +41,15 @@ We have been provided six CSV files (listed below in resources) to convert into 
 
 Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
 
-- ### indent 1:
+- ### Number of Retiring Employees by Title:
 
 details 
 
+![title_counts.PNG](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/title_counts.PNG)
+
 Link to the csv file and code: 
     
-- ### indent 2:
+- ### Employees Eligible for the Mentorship Program:
 
 details
 
