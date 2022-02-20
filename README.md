@@ -39,7 +39,7 @@ We have been provided six CSV files (listed below in resources) to convert into 
 
 ## Results
 
-Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
+Please refer to SQL Schema contained [HERE](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql) for the following Analysis.
 
 ### Number of Retiring Employees by Title:
 
