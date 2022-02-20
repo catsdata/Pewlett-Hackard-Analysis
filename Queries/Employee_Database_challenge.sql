@@ -22,7 +22,7 @@ GROUP BY title
 ORDER BY 1 DESC
 
 -- print table for challenge deliverable 1
-select * from retiring_titles
+SELECT * FROM retiring_titles
 
 -- find mentors born in 1965 for deliverable 2
 SELECT DISTINCT ON (e.emp_no)
