@@ -35,6 +35,14 @@ AND e.birth_date BETWEEN '1965-01-01' AND '1965-12-31'
 AND t.to_date = '9999-01-01'
 ORDER BY e.emp_no
 
+SELECT count(*) as total, title
+INTO mentorship_eligibility_summary
+FROM mentorship_eligibility m
+GROUP BY title
+ORDER BY 1 DESC
+
+SELECT * FROM mentorship_eligibility_summary
+
 -- Deliverable 3:  addressing when retirees are retiring
 
 
