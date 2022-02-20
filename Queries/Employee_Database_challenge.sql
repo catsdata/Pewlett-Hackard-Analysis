@@ -43,9 +43,21 @@ ORDER BY 1 DESC
 
 SELECT * FROM mentorship_eligibility_summary
 
--- Deliverable 3:  addressing when retirees are retiring
+-- Deliverable 3:  addressing first impacts of retiring
 
+SELECT ut.emp_no, ut.first_name, ut.last_name, ut.title
+INTO firstyear_retirees
+FROM unique_titles ut LEFT JOIN employees e ON (ut.emp_no = e.emp_no)
+WHERE (birth_date BETWEEN '1952-01-01' AND '1952-12-31')
+ORDER BY ut.emp_no
 
+SELECT count(*) as total, title
+INTO firstyear_summary
+FROM firstyear_retirees fr
+GROUP BY title
+ORDER BY 1 DESC
+
+SELECT * FROM firstyear_summary
 
 -- Deliverable 3:  find mentors born after 1964 with at least 2 years in position
 SELECT DISTINCT ON (e.emp_no)
