@@ -13,7 +13,7 @@
 
 ## Overview
 
-Pewllet-Hackard is a company with several thousand loyal employees; many of which are baby-boomers about to retire.  This mass retirement coming up has been termed the "silver tsunami".  Bobby, the Pewlett-Hackard HR analyst, was tasked to perform employee research with my assistance and analyze data to answer the following:
+Pewlett-Hackard is a company with several thousand loyal employees; many of which are baby-boomers about to retire.  This mass retirement coming up has been termed the "silver tsunami".  Bobby, the Pewlett-Hackard HR analyst, was tasked to perform employee research with my assistance and analyze data to answer the following:
 
 - ***Who will be retiring in the next few years, and what are their current titles?***
 - ***Which employees are eligible for a mentorship program?***
@@ -41,15 +41,18 @@ We have been provided six CSV files (listed below in resources) to convert into 
 
 Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
 
-- ### Number of Retiring Employees by Title:
+### Number of Retiring Employees by Title:
 
-details 
+- We started by creating a table of those of retirement age and their titles.  To do so, we linked the employees csv file with the titles csv file in a left join respectively using the employee numbers.  We grabbed the employee number, first name and last name from the employees csv and the title, from date and to date from the titles csv.  This table was saved as [retirement_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv) with 133,776 results.  The results contained duplicate employees due to job changes as well as employees no longer with Pewlett-Hackard.
 
-![title_counts.PNG](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/title_counts.PNG)
+- To remove duplicates, we used DISTINCT ON with the employee number.  We then removed ex-employees by adding in a WHERE clause that had the "9999-01-01" default to_date for active employees.  This reduced us to 72458 records, removing over 90,000 rows of data for duplicates and ex-employees.  Revised data was saved to [unique_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv).
 
-Link to the csv file and code: 
+- To summarize the data by titles, we selected counts into new file [retiring_titles.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.csv). 
+
+ ![title_counts.PNG](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/title_counts.PNG)
+
     
-- ### Employees Eligible for the Mentorship Program:
+### Employees Eligible for the Mentorship Program:
 
 details
 
