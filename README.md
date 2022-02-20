@@ -19,14 +19,8 @@ Explain the purpose of this analysis.
 
 - Data Sources: [NAME.csv](file link)
 - Software: 
-    - Jupyter Notebook 6.4.6
-    - Python 3.7.11 with dependencies: 
-        - pandas 1.3.5
-        - numpy 1.20.3
-        - MatPlotLib 3.5.0
-        - citipy 0.0.5
-    - Anaconda Command line Client 1.9.0
-    - Conda 4.11.0
+    - PostgreSQL 12.9.1
+    - pgAdmin 4
 
 
 ## Results
