@@ -48,7 +48,7 @@ WHERE e.emp_no = de.emp_no
 AND e.emp_no = t.emp_no
 AND e.birth_date > '1965-01-01'
 AND t.to_date = '9999-01-01'
-AND t.from_date > '2000-08-01'
+AND t.from_date < '2000-08-01'
 ORDER BY e.emp_no
 
 SELECT count(*) as total, title
