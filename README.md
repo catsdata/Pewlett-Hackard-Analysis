@@ -55,6 +55,8 @@ Provide a bulleted list with four major points from the two analysis deliverable
 
 - Pewlett-Hackard execs wanted to look into a Mentorship program for new employees coming in to replace the retirees.  It was requested to find employeees born in 1965.  Using DISTINCT ON again from the employee numbers, we grabbed data from the employees csv file, dept_emp csv file, and titles csv file.  All contained the employee numbers.  Data was filtered with birthdates from 1965-01-01 to 1965-12-31 and to grab only active employees the to_date filtered to 9999-01-01.  Data was saved into [mentorship_eligibility.csv](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_eligibility.csv).  1549 employees were listed.
 
+   ![mentor_eligibility.PNG](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/mentor_eligibility.PNG)
+
 ## Summary
 
 ### How many roles will need to be filled as the "silver tsunami" begins to make an impact? 
