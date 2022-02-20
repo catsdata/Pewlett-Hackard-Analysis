@@ -23,3 +23,16 @@ ORDER BY 1 DESC
 
 -- print table for challenge deliverable 1
 select * from retiring_titles
+
+-- find mentors born in 1965 for deliverable 2
+SELECT DISTINCT ON (e.emp_no)
+	e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, t.title
+INTO mentorship_eligibility
+FROM employees e, dept_emp de, titles t
+WHERE e.emp_no = de.emp_no
+AND e.emp_no = t.emp_no
+AND e.birth_date BETWEEN '1965-01-01' AND '1965-12-31'
+AND t.to_date = '9999-01-01'
+ORDER BY e.emp_no
+
+
