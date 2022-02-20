@@ -13,19 +13,14 @@
 
 ## Overview
 
-Pewllet-Hackard (PH) is a large company with several thousand employees - many of those are baby-boomers who are currently about to retire, which could cause a massive problem. The company intends to tackle the issue in two ways:
-- Offering retirement packages for those who meet certain criteria;
-- Figuring out which positions will need to be filled in the upcoming years.
+Pewllet-Hackard is a company with several thousand loyal employees; many of which are baby-boomers about to retire.  This mass retirement coming up has been termed the "silver tsunami".  Bobby, the Pewlett-Hackard HR analyst, was tasked to perform employee research with my assistance and analyze data to answer the following:
 
-Bobby is an HR analyst who works at Pewllet-Hackard's and whose task is to perform employee research. 
+- ***Who will be retiring in the next few years, and what are their current titles?***
+- ***Which employees are eligible for a mentorship program?***
 
-Given how critical the current situation is, Bobby is tasked to find out:
-- ***Who will be retiring in the next few years?***
-- ***How many positions will PH have to fill?***
+Data is currently pulled into csv files from seperate systems, but needs to be built into a database for future use and scalability.  SQL is the preferred database structure.
 
-Pewllet-Hackard has not taken data seriously up to this point and still manages their employees' information in CSV files. They finally decided it was time to convert it to a solution that would allow more scalability, therefore a SQL-database was brought into scene.
-
-We have been provided six CSV files (listed below in resources) to convert into a database for the analysis
+We have been provided six CSV files (listed below in resources) to convert into the SQL database for the retirement analysis:
 - departments.csv
 - dept_emp.csv
 - dept_manager.csv
@@ -36,8 +31,6 @@ We have been provided six CSV files (listed below in resources) to convert into 
 Based on the csv files, we created an entity relationship diagram (ERD) to plan out our data relationships and start our SQL query.
 
 ![EmployeeDB.png](https://github.com/catsdata/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png)
-
-
 
 ## Resources
 
