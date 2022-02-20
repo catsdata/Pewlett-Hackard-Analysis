@@ -38,5 +38,23 @@ ORDER BY e.emp_no
 -- Deliverable 3:  addressing when retirees are retiring
 
 
--- Deliverable 3:  alternate mentors not just 1965 birthyear
 
+-- Deliverable 3:  find mentors born after 1964 with at least 2 years in position
+SELECT DISTINCT ON (e.emp_no)
+	e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, t.title
+INTO mentorship_revised
+FROM employees e, dept_emp de, titles t
+WHERE e.emp_no = de.emp_no
+AND e.emp_no = t.emp_no
+AND e.birth_date > '1965-01-01'
+AND t.to_date = '9999-01-01'
+AND t.from_date > '2000-08-01'
+ORDER BY e.emp_no
+
+SELECT count(*) as total, title
+INTO mentorship_summary
+FROM mentorship_revised mr
+GROUP BY title
+ORDER BY 1 DESC
+
+SELECT * FROM mentorship_summary
